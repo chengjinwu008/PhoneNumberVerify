@@ -80,6 +80,7 @@ public class Validator {
                             listener.verifyFinished((String) code.get("telString"));
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            listener.verifyFinished(null);
                         }
                 }else{
                     if(listener!=null)
